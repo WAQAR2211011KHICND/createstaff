@@ -13,7 +13,9 @@ import lombok.Setter;
 @Entity
 @Table(name = "staff_data")
 public class CreateStaff {
+    
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Setter

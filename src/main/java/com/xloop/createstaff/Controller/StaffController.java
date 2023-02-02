@@ -37,12 +37,12 @@ public class StaffController {
             return ResponseEntity.status(404).body("Selected User Not Found!");
         }
         staffRepo.save(createStaff);
-        return ResponseEntity.ok("Staff Added");
+        return ResponseEntity.ok("User Updated");
     }
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteStaff(@PathVariable Long id){
         staffRepo.deleteById(id);
-        return ResponseEntity.ok("Selected Staff Deleted");
+        return ResponseEntity.ok("Selected User Deleted");
     }
 
     @GetMapping("")
