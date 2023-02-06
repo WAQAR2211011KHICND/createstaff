@@ -33,8 +33,6 @@ public class CreateStaff {
     @Setter
     private Date date_of_birth;
     @Setter
-    private String password;
-    @Setter
     private String designation;
     @Setter
     private String role;
@@ -42,18 +40,15 @@ public class CreateStaff {
 
     public CreateStaff(){}
     public CreateStaff(String firstName, String lastName, String email,
-    Long cnic, String gender, Date date_of_birth, String password,
-    String designation, String role){
+    Long cnic, String gender, Date date_of_birth,String designation, String role){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.cnic = cnic;
         this.gender = gender;
         this.date_of_birth = date_of_birth;
-        this.password = password;
         this.designation = designation;
         this.role = role;
-
     }
     
 }
